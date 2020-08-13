@@ -1,19 +1,25 @@
 
 public class EmployeeWageBuilder
 {
-
 	public static void main(String[] args)
 	{
-		//Display welcome message
+	//Display welcome message
 		System.out.println("Welcome To Employee Wage Computation Problem");
-		 	//Constants
-      	int IS_PRESENT = 1;
-         //Computation
-      	double empCheck = Math.floor(Math.random() * 10 ) % 2;
-			if (empCheck== IS_PRESENT)
-         	System.out.println("Employee Is Present");
-      	else
-         	System.out.println("Employee Is Absent");
-
+	//Constants
+		int IS_PRESENT = 1;
+		int EMP_WAGE_PER_HR=20;
+		int FULL_DAY_HR=8;
+	//Computation
+		double empCheck = Math.floor(Math.random() * 10 ) % 2;
+		if (empCheck== IS_PRESENT)
+		{
+				System.out.println("Employee Is Present");
+			int Salary = EMP_WAGE_PER_HR * FULL_DAY_HR;
+				System.out.println("Salary="+Salary);
+		}
+     	else
+		{
+			System.out.println("Employee Is Absent");
+		}
 	}
 }
